@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Constant.java&apos; to &apos;BNST_OWNER/src/com.bn.utils&apos;&#x0A;- Original project: &apos;BNST_OWNER&apos;&#x0A;- Destination element: &apos;BNST_OWNER/src/com.bn.utils&apos;&#x0A;- Original element: &apos;com.bn.st.xc.Constant.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.bn.utils" element1="/src&lt;com.bn.st.xc{Constant.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1463413522104" units="1" version="1.0"/>
+</session>

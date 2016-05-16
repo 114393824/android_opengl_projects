@@ -1,0 +1,10 @@
+package com.bn.st.xc;
+
+public class Constant {
+	public static float SCREEN_WIDTH;
+	public static float SCREEN_HEIGHT;
+	
+	//为仪表板进行自适应的常量数据 0号为480x800 1号为480x854 2号为540x960 3号为320x480
+	public static int screenId=0;
+	public static float screenRatio;
+}

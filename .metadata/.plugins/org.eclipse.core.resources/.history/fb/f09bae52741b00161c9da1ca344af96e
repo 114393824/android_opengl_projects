@@ -1,0 +1,92 @@
+package com.bn.st.d2;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.pm.ActivityInfo;
+import android.media.AudioManager;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.view.Window;
+import android.view.WindowManager;
+import static com.bn.st.xc.Constant.*;
+
+@SuppressLint("HandlerLeak")
+public class MyActivity extends Activity {
+
+	public Handler hd;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+				WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+		setVolumeControlStream(AudioManager.STREAM_MUSIC);
+
+		SCREEN_WIDTH = getWindowManager().getDefaultDisplay().getWidth();
+		SCREEN_HEIGHT = getWindowManager().getDefaultDisplay().getHeight();
+
+		this.addHandlerMessage();
+	}
+
+	private void addHandlerMessage() {
+		hd = new Handler() {
+
+			@Override
+			public void handleMessage(Message msg) {
+				// TODO Auto-generated method stub
+				// super.handleMessage(msg);
+				switch (msg.what) {
+				case 0://去欢迎界面
+					gotoWelcomeView();
+					break;
+				case 1://去主菜单界面
+					gotoMainMenuView();
+					break;
+				case 2://去模式选择界面
+					gotoGameModeView()
+					break;
+				case 3://去选艇界面
+					break;
+				case 4://去音效设置界面
+					break;
+				case 5://去游戏帮助界面
+					break;
+				case 6://去关于界面
+					break;
+				case 7://主界面退出游戏按钮
+					break;
+				case 8://去游戏界面-计时模式
+					break;
+				case 9://去游戏界面-竞速模式
+					break;
+				case 10://去游戏记录查询界面
+					break;
+				case 11://显示是否破纪录对话框
+					break;
+				case 12://显示当前名次对话框
+					break;
+				}
+			}
+
+		};
+
+		hd.sendEmptyMessage(0);
+	}
+	
+	private void gotoWelcomeView(){
+		
+	}
+	
+	private void gotoMainMenuView(){
+		
+	}
+	
+	private void gotoGameModeView(){
+		
+	}
+}

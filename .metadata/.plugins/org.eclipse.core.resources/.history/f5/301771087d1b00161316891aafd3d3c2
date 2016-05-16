@@ -1,0 +1,18 @@
+package com.bn.st.xc;
+
+public class Constant {
+	//屏幕的大小
+	public static float SCREEN_WIDTH;
+	public static float SCREEN_HEIGHT;
+	//缩放比例
+	public static float ratio_width;
+	public static float ratio_height;
+	// Ϊ�Ǳ���������Ӧ�ĳ������ 0��Ϊ480x800 1��Ϊ480x854 2��Ϊ540x960 3��Ϊ320x480
+	public static int screenId = 0;
+	public static float screenRatio;
+
+	public static final float screenRatio480x320 = 1.5f;// ��Ļ��߱�
+	public static final float screenRatio800x480 = 1.667f;
+	public static final float screenRatio854x480 = 1.779f;
+	public static final float screenRatio960x540 = 1.778f;
+}
